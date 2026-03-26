@@ -5,20 +5,38 @@
     <url>https://checkit.clontz.org</url>
     <outcomes>
         <outcome>
-            <title>Sample Outcome</title>
-            <slug>EX1</slug>
-            <path>outcomes/EX1</path>
+            <title>Closed Forms</title>
+            <slug>SS3</slug>
+            <path>outcomes/SS3</path>
             <description>
-Simplify the sum of two monomials.
+                Find the closed form for a partial sum series and use it to evaluate an infinite series.
             </description>
         </outcome>
         <outcome>
-            <title>Sample Image Outcome</title>
-            <slug>IMG1</slug>
-            <path>outcomes/IMG1</path>
+            <title>Integral Test</title>
+            <slug>SS4</slug>
+            <path>outcomes/SS4</path>
             <description>
-Example of generating graphics.
+                Apply the integral test to determine if a series converges or diverges.
             </description>
         </outcome>
+        <outcome>
+            <title>Direct Comparison Test</title>
+            <slug>SS5</slug>
+            <path>outcomes/SS5</path>
+            <description>
+                Apply the direct comparison test to determine if a series converges or diverges.
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Limit Comparison Test</title>
+            <slug>SS6</slug>
+            <path>outcomes/SS6</path>
+            <description>
+                Apply the limit comparison test to determine if a series converges or diverges.
+            </description>
+        </outcome>
+        
     </outcomes>
 </bank>

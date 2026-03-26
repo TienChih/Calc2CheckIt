@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    
+        <!-- {{#tasks}} -->
+        <knowl>
+            <intro>
+                <p>
+                    Consider the sequence <m>a_k = \displaystyle {{summand}}</m>.
+                </p>
+            </intro>
+            <knowl>
+                <content>
+                    <p>
+                        Find a closed form for <m>\displaystyle \sum_{ k= {{k0}} }^n {{summand}} </m>.
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        <m>\displaystyle{{closedform}}</m>.
+                    </p>
+                </outtro>
+            </knowl>
+            <knowl>
+                <content>
+                    <p>
+                        Used the above closed form to find <m>\displaystyle \sum_{ k= {{k0}} }^\infty {{summand}} </m>.
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        <m>\displaystyle{{limit}}</m>.
+                    </p>
+                </outtro>
+            </knowl>
+        </knowl>
+<!-- {{/tasks}} -->
+</knowl>
