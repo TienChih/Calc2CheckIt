@@ -4,7 +4,7 @@
     <slug>new-checkit-bank</slug>
     <url>https://checkit.clontz.org</url>
     <outcomes>
-        <outcome>
+        <!--<outcome>
             <title>Closed Forms</title>
             <slug>SS3</slug>
             <path>outcomes/SS3</path>
@@ -35,6 +35,23 @@
             <path>outcomes/SS6</path>
             <description>
                 Apply the limit comparison test to determine if a series converges or diverges.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Alternating Series Test</title>
+            <slug>SS7</slug>
+            <path>outcomes/SS7</path>
+            <description>
+                Determine if a series is absolutely convergent, conditionally convergent or divergent.
+            </description>
+        </outcome>-->
+
+        <outcome>
+            <title>Ratio and Root Test</title>
+            <slug>SS8</slug>
+            <path>outcomes/SS8</path>
+            <description>
+                Use the ratio or root test to determine if a series is absolutely convergent or divergent.
             </description>
         </outcome>
         
