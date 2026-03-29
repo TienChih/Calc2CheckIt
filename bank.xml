@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <bank xmlns="https://checkit.clontz.org" version="0.2">
-    <title>New CheckIt Bank</title>
+    <title>OxCalc II Bank</title>
     <slug>new-checkit-bank</slug>
     <url>https://checkit.clontz.org</url>
     <outcomes>
@@ -44,7 +44,7 @@
             <description>
                 Determine if a series is absolutely convergent, conditionally convergent or divergent.
             </description>
-        </outcome>-->
+        </outcome>
 
         <outcome>
             <title>Ratio and Root Test</title>
@@ -54,6 +54,92 @@
                 Use the ratio or root test to determine if a series is absolutely convergent or divergent.
             </description>
         </outcome>
-        
+
+        <outcome>
+            <title>Intervals of Convergence BAD BAD BAD</title>
+            <slug>PS1</slug>
+            <path>outcomes/PS1</path>
+            <description>
+                Find the radius of convergence of a power series.
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Power Series of a Function</title>
+            <slug>PS2</slug>
+            <path>outcomes/PS2</path>
+            <description>
+                Find the power series of a function.
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Closed Form for a Power Series</title>
+            <slug>PS3</slug>
+            <path>outcomes/PS3</path>
+            <description>
+                Find the closed form for a power series.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Evaluate Limits using Power Series</title>
+            <slug>PS4</slug>
+            <path>outcomes/PS4</path>
+            <description>
+                Evaluate the limit of a series using power series.
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Power Series via Taylor Series</title>
+            <slug>PS5</slug>
+            <path>outcomes/PS5</path>
+            <description>
+                Work with power series derived via Taylor series. 
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Closed Forms for Taylor Series</title>
+            <slug>PS6</slug>
+            <path>outcomes/PS6</path>
+            <description>
+                Find the closed form of power series derived via Taylor series. 
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Evaluate Limits using Power Series derived via Taylor Series</title>
+            <slug>PS7</slug>
+            <path>outcomes/PS7</path>
+            <description>
+                Evaluate the limit of a series using power series derived via Taylor series.
+            </description>
+        </outcome>
+        <outcome>
+            <title>General Power Series of Functions</title>
+            <slug>PS8</slug>
+            <path>outcomes/PS8</path>
+            <description>
+                Find the power series of a variety of functions.
+            </description>
+        </outcome>
+        <outcome>
+            <title>General Closed Form of a Power Series</title>
+            <slug>PS9</slug>
+            <path>outcomes/PS9</path>
+            <description>
+                Find the closed form for a variety of power series.
+            </description>
+        </outcome>-->
+        <outcome>
+            <title>Taylor Series and Taylor Polynomials</title>
+            <slug>PS10</slug>
+            <path>outcomes/PS10</path>
+            <description>
+                Interpret a power series as a Taylor series.
+            </description>
+        </outcome>
+
     </outcomes>
 </bank>

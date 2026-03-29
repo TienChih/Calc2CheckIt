@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    
+        <!-- {{#tasks}} -->
+        <knowl>
+            <!--{{#finite}}-->
+            
+            <knowl>
+                <content>
+                    <p>
+                        Find the interval of convergence for  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= 0 }^\infty {{summand}} </m>.
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        We begin with finding the radius of convergence <m>R</m>.  
+                        By letting <m>\renewcommand{\log}{\ln} b_n = {{Bn}}</m>, we have that <m>\renewcommand{\log}{\ln} b_{n+1} = {{Bn+1}}</m>.  We wish to
+                        find the values of <m>x</m> where 
+                        <me>\renewcommand{\log}{\ln} \lim_{n\to\infty} \left| {{Bnp1}} \cdot {{Bnr}} \right| &lt; 1 </me>
+                        which occurs precisely when 
+                        <me>\renewcommand{\log}{\ln} |x - {{a}}| \lim_{n\to\infty} {{Ratio}} &lt; 1 </me>, and by evaluating the limit, this occurs when
+                        <me>\renewcommand{\log}{\ln} |x-{{a}}| &lt; 1</me> or when <m>\renewcommand{\log}{\ln} \displaystyle {{Lpoint}} &lt; x &lt; {{Rpoint}}</m>.
+                    </p>
+                </outtro>
+            </knowl>
+            
+            <!--{{/finite}}-->
+
+            
+
+            
+        </knowl>
+<!-- {{/tasks}} -->
+</knowl>
