@@ -1,21 +1,39 @@
 class Generator(BaseGenerator):
     def data(self):
         var('k n i j')
+
+        given = choice(["case1", "case2"])
+
+        if given == "case1":
+            ratiogiven = True
+            geogiven = False
+            notratiogiven = False
+            notgeogiven = True
+
+        if given == "case2":
+            ratiogiven = False
+            geogiven = True
+            notratiogiven = True
+            notgeogiven = False    
         
         numerator = randrange(1,6)
         denominator = numerator + randrange(1,4)
         ratio = Rational(numerator/denominator*choice([-1,1]))
         k1 = randrange(5)
         coefficient = randrange(2,6)
-        summand1 = coefficient*ratio^k
-        closedform1 = coefficient*(ratio^k1 - ratio^(n+1))/(1-ratio)
+        summand1(k) = coefficient*ratio^k
+        closedform1(n) = coefficient*(ratio^k1 - ratio^(n+1))/(1-ratio)
         limit1 = coefficient*ratio^k1/(1-ratio)
 
         tasks=[{
             "k0": k1,
-            "summand": summand1,
-            "closedform": closedform1,
+            "summandk": summand1(k),
+            "summandn": summand1(n),
+            "closedformn": closedform1(n),
+            "closedformnm1": closedform1(n-1),
             "limit": limit1,
+            "given": geogiven,
+            "notgiven": notgeogiven,
         }
         ]
 
@@ -26,23 +44,30 @@ class Generator(BaseGenerator):
         f(k) = a/(k+b)
         g(k) = a/(k+b+c)
 
-        summand2 = f(k)-g(k)
+        summand2(k) = f(k)-g(k)
         k2 = randrange(0,5)
 
-        closedform2 = 0
-
+        
+        
+        cf = 0
+        
         for i in range(c):
-            closedform2 += f(k2+i)
+            cf += f(k2+i)
         for i in range(c):
-            closedform2 += -1*g(n+i)    
-
+            cf += -1*g(n-i)    
+        
+        closedform2(n) = cf    
         limit2 = sum(f(k2+j), j, 0, c-1)
-
+        
         tasks +=[{
             "k0": k2,
-            "summand": summand2.factor(),
-            "closedform": closedform2.expand(),
+            "summandk": summand2(k).factor(),
+            "summandn": summand2(n).factor(),
+            "closedformn": closedform2(n).simplify(),
+            "closedformnm1": closedform2(n-1).simplify(),
             "limit": limit2,
+            "notgiven": notratiogiven,
+            "given": ratiogiven,
         }
         ]
 

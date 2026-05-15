@@ -4,7 +4,56 @@
     <slug>new-checkit-bank</slug>
     <url>https://checkit.clontz.org</url>
     <outcomes>
-        <!--<outcome>
+        <outcome>
+            <title>Integration Review</title>
+            <slug>TI1</slug>
+            <path>outcomes/TI1</path>
+            <description>
+                Find the integral of a function using substitution and/or algebra.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Integration by Parts</title>
+            <slug>TI2</slug>
+            <path>outcomes/TI2</path>
+            <description>
+                Find the integral of a function using integration by parts (and substitution when appropriate).
+            </description>
+        </outcome>
+        <outcome>
+            <title>Integral of Trigonometric Functions</title>
+            <slug>TI3</slug>
+            <path>outcomes/TI3</path>
+            <description>
+                Find the integral of trigonometric functions using identities, parts and/or substitution.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Trigonometric Substitution</title>
+            <slug>TI4</slug>
+            <path>outcomes/TI4</path>
+            <description>
+                Find the integral of algebraic functions via trigonometric substitution.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Partial Fractions</title>
+            <slug>TI5</slug>
+            <path>outcomes/TI5</path>
+            <description>
+                Find the integral of rational functions via partial fraction decomposition.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Select a Strategy</title>
+            <slug>TI6</slug>
+            <path>outcomes/TI6</path>
+            <description>
+                Identify the appropriate integration technique(s) and apply them to integrate a function.
+            </description>
+        </outcome>
+        <!--
+        <outcome>
             <title>Closed Forms</title>
             <slug>SS3</slug>
             <path>outcomes/SS3</path>
@@ -131,7 +180,7 @@
             <description>
                 Find the closed form for a variety of power series.
             </description>
-        </outcome>-->
+        </outcome>
         <outcome>
             <title>Taylor Series and Taylor Polynomials</title>
             <slug>PS10</slug>
@@ -139,7 +188,7 @@
             <description>
                 Interpret a power series as a Taylor series.
             </description>
-        </outcome>
+        </outcome>-->
 
     </outcomes>
 </bank>

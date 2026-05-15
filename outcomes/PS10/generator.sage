@@ -18,7 +18,7 @@ class Generator(BaseGenerator):
 
         In = 0
         c1 = 0
-        while(In[0] == c1):
+        while(In == c1):
             c1  = randrange(0,7)
             In = randrange(0,5)
 
@@ -39,7 +39,7 @@ class Generator(BaseGenerator):
             "Cn": C(n),
             "An": A(n,x),
             "m": m,
-            "Tm": Tm,
+            "Tm": Tm(x),
             "CM": C(M), 
             "M": M,    
             "a": a,    
