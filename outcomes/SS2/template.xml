@@ -1,37 +1,51 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
-    
-        <!-- {{#tasks}} -->
-        <knowl>
-            <intro>
-                <p>
-                    Consider the sequence <m>a_k = \displaystyle {{summand}}</m>.
-                </p>
-            </intro>
-            <knowl>
-                <content>
+    <intro>
+        <p>
+For each of the following sequences, determine which of the properties:
+<em>monotonic</em>, <em>bounded</em> and <em>convergent</em>, the sequence satisfies. 
+If a sequence is convergent, determine to what it converges.
+        </p>
+    </intro>
+<!-- {{#Problems}} -->
+    <knowl>
+        <content>
+            <p><m>\displaystyle \left\{ {{Sequence}} \right\}_{n=0}^\infty</m>.</p>
+        </content>
+        <outtro>
+            <list>
+                <item>
                     <p>
-                        Find a closed form for <m>\displaystyle \sum_{ k= {{k0}} }^n {{summand}} </m>.
+<!-- {{#Mono}} -->
+The sequence is monotonic.                
+<!-- {{/Mono}} -->
+<!-- {{^Mono}} -->
+The sequence is not monotonic.                
+<!-- {{/Mono}} -->
                     </p>
-                </content>
-                <outtro>
+                </item>
+                <item>
                     <p>
-                        <m>\displaystyle{{closedform}}</m>.
+<!-- {{#Bounded}} -->
+The sequence is bounded.                
+<!-- {{/Bounded}} -->
+<!-- {{^Bounded}} -->
+The sequence is not bounded.                
+<!-- {{/Bounded}} -->
                     </p>
-                </outtro>
-            </knowl>
-            <knowl>
-                <content>
+                </item>
+                <item>
                     <p>
-                        Used the above closed form to find <m>\displaystyle \sum_{ k= {{k0}} }^\infty {{summand}} </m>.
+<!-- {{#Converge}} -->
+The sequence converges to <m>{{Limit}}</m>.                
+<!-- {{/Converge}} -->
+<!-- {{^Converge}} -->
+The sequence does not converge.                
+<!-- {{/Converge}} -->
                     </p>
-                </content>
-                <outtro>
-                    <p>
-                        <m>\displaystyle{{limit}}</m>.
-                    </p>
-                </outtro>
-            </knowl>
-        </knowl>
-<!-- {{/tasks}} -->
+                </item>
+            </list>
+        </outtro>
+    </knowl>      
+<!-- {{/Problems}} -->
 </knowl>

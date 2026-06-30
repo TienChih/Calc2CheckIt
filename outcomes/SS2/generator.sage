@@ -1,53 +1,127 @@
 class Generator(BaseGenerator):
     def data(self):
-        var('k n i j')
+        n=var("n")
         
-        numerator = randrange(1,6)
-        denominator = numerator + randrange(1,4)
-        ratio = Rational(numerator/denominator*choice([-1,1]))
-        k1 = randrange(5)
-        coefficient = randrange(2,6)
-        summand1 = coefficient*ratio^k
-        closedform1 = coefficient*(ratio^k1 - ratio^(n+1))/(1-ratio)
-        limit1 = coefficient*ratio^k1/(1-ratio)
-
-        tasks=[{
-            "k0": k1,
-            "summand": summand1,
-            "closedform": closedform1,
-            "limit": limit1,
-        }
-        ]
-
-        a = randrange(1,6)
-        b = randrange(1,6)
-        c = randrange(2,4)
-
-        f(k) = a/(k+b)
-        g(k) = a/(k+b+c)
-
-        summand2 = f(k)-g(k)
-        k2 = randrange(0,5)
-
-        closedform2 = 0
-
-        for i in range(c):
-            closedform2 += f(k2+i)
-        for i in range(c):
-            closedform2 += -1*g(n+i)    
-
-        limit2 = sum(f(k2+j), j, 0, c-1)
-
-        tasks +=[{
-            "k0": k2,
-            "summand": summand2.factor(),
-            "closedform": closedform2.expand(),
-            "limit": limit2,
-        }
-        ]
-
-        shuffle(tasks)
-
         
+        
+        #Exponential decreasing
+        num=Integer(randint(1,5))
+        denom=Integer(randint(num+1, num+5))
+        coeff=randint(1,5)
+        ratio=num/denom
+        
+        Converge1={
+            "Sequence":coeff*(ratio)^n,
+            "Limit":0,
+            "Converge":True,
+            "Bounded":True,
+            "Mono":True,
+        }
+        
+        # #Rational->0
+        # denom=randint(1,5)
+        # coeff=randint(1,5)
+        
+        # Converge2={
+        #     "Sequence":coeff*n/(n^2+denom),
+        #     "Limit":0,
+        #     "Converge":True,
+        #     "Bounded":True,
+        #     "Mono":False,
+        # }
+        
+        
+        #Rational->c
+        denom=randint(1,5)
+        coeff=randint(1,5)
+        
+        Converge3={
+            "Sequence":coeff*n^2/(n^2+denom),
+            "Limit":coeff,
+            "Converge":True,
+            "Bounded":True,
+            "Mono":True,
+        }
+        
+        
+        #Alt->0
+        denom=randint(1,5)
+        coeff=randint(1,5)
+        
+        Converge4={
+            "Sequence":(-1)^n*coeff*n/(n^2+denom),
+            "Limit":0,
+            "Converge":True,
+            "Bounded":True,
+            "Mono":False,
+        }
+        
+        
+        #Exponential increase
+        denom=Integer(randint(1,5))
+        num=Integer(randint(denom+1, denom+5))
+        coeff=randint(1,5)
+        ratio=num/denom
+        
+        Diverge1={
+            "Sequence":coeff*(ratio)^n,
+            "Limit":oo,
+            "Converge":False,
+            "Bounded":False,
+            "Mono":True,
+        }
+        
+        #Rational->oo
+        denom=randint(1,5)
+        coeff=randint(1,5)
+        
+        Diverge2={
+            "Sequence":coeff*n^3/(n^2+denom),
+            "Limit":0,
+            "Converge":False,
+            "Bounded":False,
+            "Mono":True,
+        }
+        
+        
+        #Alt->oo
+        denom=randint(1,5)
+        coeff=randint(1,5)
+        
+        Diverge3={
+            "Sequence":(-1)^n*coeff*n^3/(n^2+denom),
+            "Limit":0,
+            "Converge":False,
+            "Bounded":False,
+            "Mono":False,
+        }
+        
+        
+        #Alt->c
+        denom=randint(1,5)
+        coeff=randint(1,5)
+        
+        Diverge4={
+            "Sequence":(-1)^n*coeff*n^2/(n^2+denom),
+            "Converge":False,
+            "Bounded":True,
+            "Mono":False,
+        }
+        
+        Convergent=choice([Converge1, #Converge2, 
+            Converge3, Converge4])
+        
+        Divergent=choice([Diverge1, Diverge2, Diverge3, Diverge4])
+        
+        
+        
+        
+        
+        
+        
+        Problems=[Convergent, Divergent]
+        shuffle(Problems)
 
-        return {"tasks": tasks}
+        return {
+            "Problems": Problems,
+        }

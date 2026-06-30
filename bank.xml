@@ -52,7 +52,38 @@
                 Identify the appropriate integration technique(s) and apply them to integrate a function.
             </description>
         </outcome>
-        <!--
+        <outcome>
+            <title>Improper Integrals as Limits</title>
+            <slug>TI7</slug>
+            <path>outcomes/TI7</path>
+            <description>
+                Write an improper integral as the limit of a proper definite integral to compute the value.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Improper Integrals via p-test and Comparison Theorem</title>
+            <slug>TI8</slug>
+            <path>outcomes/TI8</path>
+            <description>
+                Use  the p-test and the Comparison Theorem for integrals to determine if an improper integral converges.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Sequence Formulas</title>
+            <slug>SS1</slug>
+            <path>outcomes/SS1</path>
+            <description>
+                Define and use explicit and recursive formulas for sequences.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Sequence Properties and Limits</title>
+            <slug>SS2</slug>
+            <path>outcomes/SS2</path>
+            <description>
+                Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences.
+            </description>
+        </outcome>
         <outcome>
             <title>Closed Forms</title>
             <slug>SS3</slug>
@@ -188,7 +219,33 @@
             <description>
                 Interpret a power series as a Taylor series.
             </description>
-        </outcome>-->
+        </outcome>
+
+        <outcome>
+            <title>Polar Coordinates</title>
+            <slug>PO1</slug>
+            <path>outcomes/PO1</path>
+            <description>
+                Convert points and equations between polar and Cartesian coordinates and equations.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Polar Arclength</title>
+            <slug>PO2</slug>
+            <path>outcomes/PO2</path>
+            <description>
+                Compute arclengths of curves given in polar coordinates.
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Polar Area</title>
+            <slug>PO3</slug>
+            <path>outcomes/PO3</path>
+            <description>
+                Compute area of curves given in polar coordinates.
+            </description>
+        </outcome>
 
     </outcomes>
 </bank>
