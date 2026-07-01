@@ -5,7 +5,6 @@
         <knowl>
             <!--{{#fraction}}-->
             <!-- {{#converges}} -->
-            <knowl>
                 <content>
                     <p>
                         Use the Limit Comparison Test to determine if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ {{top}} }{ {{bottom}} } </m> converges.
@@ -20,10 +19,8 @@
                         We can see that <m>0 &lt; {{simpcoeff}} &lt; \infty </m> so by the Limit Comparison Test, <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ {{top}} }{ {{bottom}} } </m> converges if and only if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ 1 }{ n^{ {{P}} } } </m> converges, which it does by the <m>p</m>-test since <m>{{P}} &gt; 1</m>.  So  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ {{top}} }{ {{bottom}} } </m> converges.
                     </p>
                 </outtro>
-            </knowl>
             <!-- {{/converges}} -->
             <!-- {{#diverges}} -->
-            <knowl>
                 <content>
                     <p>
                         Use the Limit Comparison Test to determine if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ {{top}} }{ {{bottom}} } </m> converges.
@@ -38,13 +35,11 @@
                         We can see that <m>0 &lt; {{simpcoeff}} &lt; \infty </m> so by the Limit Comparison Test, <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ {{top}} }{ {{bottom}} } </m> converges if and only if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ 1 }{ n^{ {{P}} } } </m> converges, which it does not by the <m>p</m>-test since <m>{{P}} \leq 1</m>.  So  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ {{top}} }{ {{bottom}} } </m> diverges.
                     </p>
                 </outtro>
-            </knowl>
             <!-- {{/diverges}} -->
             <!--{{/fraction}}-->
 
             <!--{{#trans}}-->
             <!-- {{#converges}} -->
-            <knowl>
                 <content>
                     <p>
                         Use the Limit Comparison Test to determine if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \left( {{Fn}} \right) </m> converges.
@@ -59,10 +54,8 @@
                         (Not all work shown.)  We can see that <m>\renewcommand{\log}{\ln} 0 &lt; {{limit}} &lt; \infty </m> so by the Limit Comparison Test, <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \left( {{Fn}} \right) </m> converges if and only if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ 1 }{ n^{ {{P}} } } </m> converges, which it does by the <m>p</m>-test since <m>{{P}} &gt; 1</m>.  So  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty\left( {{Fn}} \right)</m> converges.
                     </p>
                 </outtro>
-            </knowl>
             <!-- {{/converges}} -->
             <!-- {{#diverges}} -->
-            <knowl>
                 <content>
                     <p>
                         Use the Limit Comparison Test to determine if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \left( {{Fn}} \right) </m> converges.
@@ -77,7 +70,6 @@
                         (Not all work shown.)  We can see that <m>\renewcommand{\log}{\ln} 0 &lt; {{limit}} &lt; \infty </m> so by the Limit Comparison Test, <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \left(  {{Fn}} \right) </m> converges if and only if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ 1 }{ n^{ {{P}} } } </m> converges, which it does not by the <m>p</m>-test since <m>{{P}} \leq 1</m>.  So  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \left(  {{Fn}} \right) </m> diverges.
                     </p>
                 </outtro>
-            </knowl>
             <!-- {{/diverges}} -->
             <!--{{/trans}}-->
 

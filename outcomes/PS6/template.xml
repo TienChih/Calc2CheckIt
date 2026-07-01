@@ -4,7 +4,6 @@
         <!-- {{#tasks}} -->
         <knowl>
             
-            <knowl>
                 <content>
                     <p>
                         Find the closed form for  <m>\renewcommand{\log}{\ln}\displaystyle \sum_{n = {{k2}} }^\infty {{Ax}} </m>.
@@ -17,7 +16,6 @@
                         and <m>\renewcommand{\log}{\ln}\displaystyle  \sum_{ n = {{k2}} }^\infty {{Ax}} = {{FFx}}</m>.
                     </p>
                 </outtro>
-            </knowl>
             
 
             

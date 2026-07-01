@@ -4,7 +4,6 @@
         <!-- {{#tasks}} -->
         <knowl>
             <!-- {{#converges}} -->
-            <knowl>
                 <content>
                     <p>
                         Use the Direct Comparison Test to determine if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ {{top}} }{ {{bottom}} } </m> converges.
@@ -19,10 +18,8 @@
                             which converges by the <m>p</m>-test since <m>{{P}} &gt; 1</m>.  So by the direct comparison text, <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ {{top}} }{ {{bottom}} } </m> converges.
                     </p>
                 </outtro>
-            </knowl>
             <!-- {{/converges}} -->
             <!-- {{#diverges}} -->
-            <knowl>
                 <content>
                     <p>
                         Use the Direct Comparison Test to determine if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ {{top}} }{ {{bottom}} } </m> converges.
@@ -37,7 +34,6 @@
                             which diverges by the <m>p</m>-test since <m>{{P}} \leq 1</m> So by the direct comparison text, <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ {{top}} }{ {{bottom}} } </m> diverges.
                     </p>
                 </outtro>
-            </knowl>
             <!-- {{/diverges}} -->
             
         </knowl>

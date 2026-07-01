@@ -4,7 +4,6 @@
         <!-- {{#tasks}} -->
         <knowl>
             <!-- {{#converges}} -->
-            <knowl>
                 <content>
                     <p>
                         Use the Integral Test to determine if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty {{summand}} </m> converges.
@@ -21,10 +20,8 @@
                         The integral <m>\displaystyle \int_{ {{k0}} }^\infty {{integrand}} dx</m> converges and thus by the Integral Test, <m>\displaystyle \sum_{ n= {{k0}} }^\infty {{summand}} </m> converges as well.
                     </p>
                 </outtro>
-            </knowl>
             <!-- {{/converges}} -->
             <!-- {{#diverges}} -->
-            <knowl>
                 <content>
                     <p>
                         Use the Integral Test to determine if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty {{summand}} </m> converges.
@@ -41,7 +38,6 @@
                         The integral <m>\displaystyle \int_{ {{k0}} }^\infty {{integrand}} dx</m> diverges and thus by the Integral Test, <m>\displaystyle \sum_{ n= {{k0}} }^\infty {{summand}} </m> diverges as well.
                     </p>
                 </outtro>
-            </knowl>
             <!-- {{/diverges}} -->
             
         </knowl>

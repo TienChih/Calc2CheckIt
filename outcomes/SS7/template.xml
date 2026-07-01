@@ -5,7 +5,6 @@
         <knowl>
             <!--{{#fraction}}-->
             <!-- {{#converges}} -->
-            <knowl>
                 <content>
                     <p>
                         Determine if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty (-1)^n\frac{ {{top}} }{ {{bottom}} } </m> converges absolutely, converges conditionally or diverges.
@@ -21,10 +20,8 @@
                         So  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty \frac{ {{top}} }{ {{bottom}} } </m> converges, and <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty (-1)^n \frac{ {{top}} }{ {{bottom}} } </m> converges absolutely.
                     </p>
                 </outtro>
-            </knowl>
             <!-- {{/converges}} -->
             <!-- {{#diverges}} -->
-            <knowl>
                 <content>
                     <p>
                         Determine if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty (-1)^n \frac{ {{top}} }{ {{bottom}} } </m> converges absolutely, converges conditionally or diverges.
@@ -44,13 +41,11 @@
                         Alternating Series Test, <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty (-1)^n \frac{ {{top}} }{ {{bottom}} } </m> converges and is condionally convergent.
                     </p>
                 </outtro>
-            </knowl>
             <!-- {{/diverges}} -->
             <!--{{/fraction}}-->
 
             <!--{{#trans}}-->
             <!-- {{#converges}} -->
-            <knowl>
                 <content>
                     <p>
                         Determine if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty (-1)^n\left( {{Fn}} \right) </m> converges absolutely, converges conditionally or diverges.
@@ -66,10 +61,8 @@
                         So  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty\left( {{Fn}} \right)</m> converges and <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty (-1)^n\left( {{Fn}} \right)</m> converges absolutely.
                     </p>
                 </outtro>
-            </knowl>
             <!-- {{/converges}} -->
             <!-- {{#diverges}} -->
-            <knowl>
                 <content>
                     <p>
                         Determine if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty (-1)^n \left( {{Fn}} \right) </m> converges absolutely, condtionally or diverges.
@@ -90,11 +83,9 @@
                         Alternating Series Test, <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty (-1)^n \left( {{Fn}} \right) </m> converges and is condionally convergent.
                     </p>
                 </outtro>
-            </knowl>
             <!-- {{/diverges}} -->
             <!--{{/trans}}-->
             <!-- {{#bad}} -->
-            <knowl>
                 <content>
                     <p>
                         Determine if <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty (-1)^n\frac{ {{top}} }{ {{bottom}} } </m> converges absolutely, converges conditionally or diverges.
@@ -107,7 +98,6 @@
                         and so <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{k0}} }^\infty (-1)^n\frac{ {{top}} }{ {{bottom}} } </m> diverges.
                     </p>
                 </outtro>
-            </knowl>
             <!-- {{/bad}} -->
 
             

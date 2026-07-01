@@ -5,7 +5,6 @@
         <knowl>
             
             
-            <knowl>
                 <content>
                     <p>
                         Find the interval of convergence for  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{start}} }^\infty {{summand}} </m>.
@@ -34,7 +33,6 @@
                         Thus the interval of convergence is <m>\renewcommand{\log}{\ln}\displaystyle  {{Lsymbol}} {{Lpoint}}, {{Rpoint}} {{Rsymbol}}  </m>.
                     </p>
                 </outtro>
-            </knowl>
             
             <!--{{/finite}}-->
 
@@ -52,7 +50,6 @@
                         Thus the interval of convergence is <m>\renewcommand{\log}{\ln} \displaystyle (-\infty, \infty)</m>.
                     </p>
                 </outtro>
-            </knowl>
             
             <!--{{/infinite}}-->
 

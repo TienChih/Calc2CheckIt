@@ -4,7 +4,6 @@
         <!-- {{#tasks}} -->
         <knowl>
             
-            <knowl>
                 <content>
                     <p>
                         Find the power series centered at <m>x=0</m> for  <m>\renewcommand{\log}{\ln}\displaystyle f(x) = {{Fx}} </m>.
@@ -16,7 +15,6 @@
                         we have that <m>\renewcommand{\log}{\ln}\displaystyle {{Fx}} =  \sum_{ n = {{k0}} }^\infty {{Ax}}</m>.
                     </p>
                 </outtro>
-            </knowl>
             
 
             
