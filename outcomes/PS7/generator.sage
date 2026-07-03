@@ -6,13 +6,14 @@ class Generator(BaseGenerator):
         tasks = []
         
         # e^x, sin(x), cos(x)
-        selection = randrange(0,5)
+        selection = randrange(0,3)
 
         coeff = 1
         P = randrange(1,3)
         outside = choice([-1,0,1])
         N = [2,3,5,7,11]
-        Input = choice([-1,1])/choice(N)
+        shuffle(N)
+        Input = choice([-1,1])*N[0]/N[1]
         C = randrange(1,6)*choice([-1,1])
         
         
@@ -22,11 +23,8 @@ class Generator(BaseGenerator):
         factvalue = [0,0,0,0,0]
         num = [0,0,0,0,0]
 
-        Fact = False
-        NoFact = False
 
         if selection == 0:
-            Fact = True
             a(x, n) = x^n/factorial(n)
             A(x, n) = C* x^(P*n+outside)/factorial(n)
             f(x) = e^x
@@ -39,7 +37,6 @@ class Generator(BaseGenerator):
                 num[i] = (C*  Input^(k[i]*P+outside)) 
         
         if selection == 1:
-            Fact = True
             a(x, n) = (-1)^n*x^(2*n+1)/factorial(2*n+1)
             A(x, n) = (-1)^n* C* x^(2*P*n+P+outside)/factorial(2*n+1)
             f(x) = sin(x)
@@ -64,37 +61,12 @@ class Generator(BaseGenerator):
                 factvalue[i] = 2*k[i]
                 num[i] = C* Input^(2*P*k[i]+outside) *(-1)^k[i]
 
-        if selection == 3:
-            NoFact = True
-            a(x, n) = (-1)^(n-1)*x^(n)/n
-            A(x, n) = (-1)^(n-1)* C* x^(P*n+outside)/n
-            f(x) = ln(1+x)
-            k0 = 1
-
-            k[0] = k0
-            for i in range(4):
-                k[i+1] = k[i]+1
-            for i in range(5):
-                num[i] = C* (Input^(P*k[i]+outside )/k[i])*(-1)^(k[i]  -1)  
-
-        if selection == 4:
-            NoFact = True
-            a(x, n) = (-1)^(n)*x^(2*n+1)/(2*n+1)
-            A(x, n) = (-1)^(n)* C* x^(2*P*n+P + outside)/(2*n+1)
-            f(x) = arctan(x)
-
-            k[0] = k0
-            for i in range(4):
-                k[i+1] = k[i]+1
-            for i in range(5):
-                num[i] = C* (Input^(P*k[i]+P+outside )/(2*k[i]+1))*(-1)^(k[i])                  
+                       
         
         F(x) = C*(x^outside)*f(x^P)  
         Limit = F(Input) 
 
         tasks+=[{
-            "Fact": Fact,
-            "NoFact": NoFact,
             "fx": f(x),
             "ax": a(x,n),
             "Fx": F(x).simplify(),

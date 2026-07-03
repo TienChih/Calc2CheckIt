@@ -4,7 +4,7 @@
     <slug>new-checkit-bank</slug>
     <url>https://checkit.clontz.org</url>
     <outcomes>
-        <!--<outcome>
+        <outcome>
             <title>Integration Review</title>
             <slug>TI1</slug>
             <path>outcomes/TI1</path>
@@ -186,7 +186,7 @@
             <description>
                 Find the closed form of power series derived via Taylor series. 
             </description>
-        </outcome>-->
+        </outcome>
 
         <outcome>
             <title>Evaluate Limits using Power Series derived via Taylor Series</title>
@@ -197,7 +197,7 @@
             </description>
         </outcome>
         
-        <!--<outcome>
+        <outcome>
             <title>General Power Series of Functions</title>
             <slug>PS8</slug>
             <path>outcomes/PS8</path>
@@ -246,7 +246,7 @@
             <description>
                 Compute area of curves given in polar coordinates.
             </description>
-        </outcome>-->
+        </outcome>
 
     </outcomes>
 </bank>
