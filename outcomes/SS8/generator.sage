@@ -61,6 +61,7 @@ class Generator(BaseGenerator):
             "diverges":diverges,
             "limit": Lim,
             "ratio": True,
+            "start": randrange(1,6),
         }
         ]
         
@@ -97,6 +98,7 @@ class Generator(BaseGenerator):
             "limit": Lim,
             "root": True,
             "scenarios":scenarios,
+            "start": randrange(1,6),
         }
         ]
         
