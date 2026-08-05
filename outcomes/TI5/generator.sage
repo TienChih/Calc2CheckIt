@@ -45,7 +45,7 @@ class Generator(BaseGenerator):
 
         shuffle(C)
 
-        j = randrange(0,5)
+        j = randrange(0,4)
 
         if j == 0:
             U(x) = choice([sin(x), cos(x), tan(x), sec(x), e^x, ln(x), arcsin(x), arctan(x)])
@@ -58,11 +58,11 @@ class Generator(BaseGenerator):
             U(x) = sqrt( randrange(1,4)^2*x + randrange(1,4)^2  )
             f2(x) = randrange(1,6)*  U(x)/x^(choice([1,2]))   
         
-        if j == 3:
-            U(x) = sqrt( randrange(1,4)^2 + randrange(1,4)*x^(1/2)  )
-            f2(x) = randrange(1,6)* (U(x)/x^choice([1,2])) 
+        #if j == 3:
+        #    U(x) = sqrt( randrange(1,4)^2 + randrange(1,4)*x^(1/2)  )
+        #    f2(x) = randrange(1,6)* (U(x)/x^choice([1,2])) 
         
-        if j == 4:
+        if j == 3:
             m = randrange(2,5)
             U(x) = x^(1/m)
             f2(x) = randrange(1,6)/(U(x)^(randrange(2,m+1)) - U(x))   
