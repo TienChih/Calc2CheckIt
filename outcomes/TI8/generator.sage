@@ -28,11 +28,11 @@ class Generator(BaseGenerator):
             if N[0] == 0 or N[0] == 1:
                 up1 = 1
             if N[0] == 2:
-                up1 = pi/2 
+                up1 = 1#pi/2 
             if N[1] == 0 or N[1] == 1:
                 up2 = 1
             if N[1] == 2:
-                up2 = pi/2      
+                up2 = 1#pi/2      
 
 
             if scenario == 0:
