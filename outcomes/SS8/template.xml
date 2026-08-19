@@ -48,7 +48,7 @@
                         We have that:
 
                             <me>\renewcommand{\log}{\ln} \displaystyle  \lim_{n\to\infty} {{absan}} = {{limit}} &lt; 1.</me> 
-                        So  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{start}} }^\infty {{an}} </m> converges absolutely by the Ratio Test.
+                        So  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{start}} }^\infty {{an}} </m> converges absolutely by the Root Test.
                     </p>
                 </outtro>
             <!-- {{/converges}} -->
@@ -59,7 +59,7 @@
                         We have that:
 
                             <me>\renewcommand{\log}{\ln} \displaystyle  \lim_{n\to\infty} {{absan}} = {{limit}} &gt; 1.</me> 
-                        So  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{start}} }^\infty {{an}} </m> diverges by the Ratio Test.
+                        So  <m>\renewcommand{\log}{\ln} \displaystyle \sum_{ n= {{start}} }^\infty {{an}} </m> diverges by the Root Test.
                     </p>
                 </outtro>
             <!-- {{/diverges}} -->

@@ -88,16 +88,22 @@ class Generator(BaseGenerator):
                 ]
       
         if scenarios[0] == "trans":
-            C = randrange(2,6)
+            P = randrange(3,6)/2
+            dummy = 10
+            while dummy > 1:
+                C = randrange(2,6)
+                k0 = randrange(1,6)
+                dummy = C/k0^P
+
+            
             funcs = [sin(C*n), arcsin(C*n), tan(C*n), arctan(C*n), randrange(2,6)^(C*n)-1, 1-cos(C*sqrt(n)) , ln(1+C*n)]        
             shuffle(funcs)
-            P = randrange(3,6)/2
             f(n) = funcs[0]
             F(n) = f(1/n^P)
             Fd = F(n).diff(n)
             Pd = (1/n^P).diff(n)
             tasks+=[{
-                    "k0":randrange(1,5),
+                    "k0":k0,
                     "Fn": F(n),
                     "Fd": Fd,
                     "P": P,
@@ -105,6 +111,7 @@ class Generator(BaseGenerator):
                     "converges":True,
                     "limit": limit(F(n)*n^P, n, oo),
                     "trans": True,
+                    "dummy": dummy,
                 }
                 ]
 
@@ -177,16 +184,23 @@ class Generator(BaseGenerator):
                 ]
         
         if scenarios[1] == "trans":
-            C = randrange(2,6)
-            funcs = [sin(C*n), arcsin(C*n), tan(C*n), arctan(C*n), randrange(2,6)^(C*n)-1, 1-cos(C*sqrt(n)) , ln(1+C*n)]        
-            shuffle(funcs)
+            
+            
+            dummy = 10
             P = randrange(1,2)/2
+            while dummy > 1:                
+                C = randrange(2,6)
+                k0 = randrange(1,6)
+                dummy = C/k0^P
+                
+            funcs = [sin(C*n), arcsin(C*n), tan(C*n), arctan(C*n), randrange(2,6)^(C*n)-1, 1-cos(C*sqrt(n)) , ln(1+C*n)]        
+            shuffle(funcs)    
             f(n) = funcs[0]
             F(n) = f(1/n^P)
             Fd = F(n).diff(n)
             Pd = (1/n^P).diff(n)
             tasks+=[{
-                    "k0":randrange(1,5),
+                    "k0":k0,
                     "Fn": F(n),
                     "Fd": Fd,
                     "P": P,

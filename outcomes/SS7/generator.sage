@@ -89,7 +89,7 @@ class Generator(BaseGenerator):
       
         if scenarios[0] == "trans":
             C = randrange(2,6)
-            funcs = [sin(C*n), arcsin(C*n), tan(C*n), arctan(C*n), randrange(2,6)^(C*n)-1, 1-cos(C*sqrt(n)) , ln(1+C*n)]        
+            funcs = [sin(C*n), tan(C*n), arctan(C*n), randrange(2,6)^(C*n)-1, 1-cos(C*sqrt(n)) , ln(1+C*n)]        
             shuffle(funcs)
             P = randrange(3,6)/2
             f(n) = funcs[0]
@@ -178,7 +178,7 @@ class Generator(BaseGenerator):
         
         if scenarios[1] == "trans":
             C = randrange(2,6)
-            funcs = [sin(C*n), arcsin(C*n), tan(C*n), arctan(C*n), randrange(2,6)^(C*n)-1, 1-cos(C*sqrt(n)) , ln(1+C*n)]        
+            funcs = [sin(C*n),  tan(C*n), arctan(C*n), randrange(2,6)^(C*n)-1, 1-cos(C*sqrt(n)) , ln(1+C*n)]        
             shuffle(funcs)
             P = randrange(1,2)/2
             f(n) = funcs[0]
