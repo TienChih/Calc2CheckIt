@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    
+    
+    <content>
+        <p>
+            Consider the plot of <m>y=f(x)</m>:
+        </p>
+        <p>            
+            <image
+                    source="assets/TI9/generated/{{__seed__}}/plot.png"
+                    description="curve with asymptotes at x = {{ass1}}, {{ass2}} and {{ass3}}."/>
+        </p>
+        <p>            
+            and the integral <m>\displaystyle \int_{ {{start}} }^{ {{end}} }f(x)dx</m>.    Express this integral as the sum of limits of proper integrals.
+            Note that there are vertical asymptotes at <m>x={{ass1}}, {{ass2}}</m> and <m>{{ass3}}</m>.
+        </p>
+    </content>
+    <!--{{#right}}-->
+    <outtro>
+        <p>
+            <m>\displaystyle  \lim_{c_1\to  {{lim1}}^- } \left( \int_{ {{start}} }^{c_1} f(x) dx\right) 
+            + \lim_{c_2\to  {{lim1}}^+ } \left( \int_{ c_2 }^{ {{cut1}} } f(x) dx\right)
+            + \lim_{c_3\to  {{lim2}}^- } \left( \int_{ {{cut1}} }^{c_3} f(x) dx\right)
+            + \lim_{c_4\to  {{lim2}}^+ } \left( \int_{ c_4 }^{ {{cut2}} } f(x) dx\right)
+            + \lim_{c_5 \to  \infty } \left( \int_{ {{cut2}} }^{ c_5 } f(x) dx\right)
+             </m>
+        </p>
+    </outtro>
+    <!--{{/right}}-->
+
+    <!--{{#left}}-->
+    <outtro>
+        <p>
+            <m>\displaystyle  \lim_{c_1\to  -\infty } \left( \int_{c_1 }^{ {{cut1}} } f(x) dx\right) 
+            + \lim_{c_2\to  {{lim1}}^- } \left( \int_{ {{cut1}} }^{ c_2 } f(x) dx\right)
+            + \lim_{c_3\to  {{lim1}}^+ } \left( \int_{ c_3 }^{ {{cut2}}  } f(x) dx\right)
+            + \lim_{c_4\to  {{lim2}}^- } \left( \int_{ {{cut2}} }^{ c_4 } f(x) dx\right)
+            + \lim_{c_5 \to  {{lim2}}^+ } \left( \int_{ c_2 }^{ {{end}} } f(x) dx\right)
+             </m>
+        </p>
+    </outtro>
+    <!--{{/left}}-->
+
+
+    
+</knowl>

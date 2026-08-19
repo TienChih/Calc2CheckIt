@@ -69,6 +69,14 @@
             </description>
         </outcome>
         <outcome>
+            <title>Splitting up an improper integral</title>
+            <slug>TI9</slug>
+            <path>outcomes/TI9</path>
+            <description>
+                Rewrite an improper integral as the sum of limits of proper integrals.
+            </description>
+        </outcome>
+        <outcome>
             <title>Sequence Formulas</title>
             <slug>SS1</slug>
             <path>outcomes/SS1</path>
