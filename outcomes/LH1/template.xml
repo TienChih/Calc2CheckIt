@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+        <intro>
+            <p>
+                Evaluate the following limits.  Identify any infinite limits by their signs.  Only apply L'Hopitals rule when valid. 
+            </p>
+            <!--<p>
+                (If an open circle appears on an point which is not a jump discontinuity, ignore it.)
+            </p>-->
+        </intro>
+
+        <!-- {{#tasks}} -->
+            <knowl>
+                <content>
+                    <p>
+                        <m>\renewcommand{\log}{\ln} \displaystyle \lim_{x\to {{a}}^{ {{directionsymbol}} } } {{fx}} </m>.
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        <m>\renewcommand{\log}{\ln} \displaystyle \lim_{x\to {{a}}^{ {{directionsymbol}} } } {{fx}} = {{thelimit}} </m>.
+                    </p>
+                </outtro>
+                
+            </knowl>
+    <!-- {{/tasks}} -->
+    
+    
+        
+    
+    
+    
+    
+    
+   
+    
+   
+</knowl>

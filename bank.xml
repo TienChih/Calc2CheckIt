@@ -5,6 +5,14 @@
     <url>https://checkit.clontz.org</url>
     <outcomes>
         <outcome>
+            <title>L'Hopitals Rule</title>
+            <slug>LH1</slug>
+            <path>outcomes/LH1</path>
+            <description>
+                Apply L'Hopitals Rule when appropriate to evaluate limits.
+            </description>
+        </outcome>
+        <outcome>
             <title>Integration Review</title>
             <slug>TI1</slug>
             <path>outcomes/TI1</path>
