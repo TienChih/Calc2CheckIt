@@ -6,7 +6,7 @@ class Generator(BaseGenerator):
         tasks = []
         
         # 1/(1-x)^2 - 1, ln(1+x), arctan(x), 
-        selection = randrange(0,3)
+        selection =  randrange(0,3)
 
         coeff = choice([randrange(2,6), 1/randrange(2,6)])
         alt = choice([-1,1])
@@ -24,6 +24,7 @@ class Generator(BaseGenerator):
                 if alt == -1:
                     A(x, n) = A(x,n)*(-1)^n
                 k1 = 0
+                k0 = 0
             else:    
                 f(x) = 1/(1-x)^2 -1
                 a(x, n) = (n+1)*x^n
