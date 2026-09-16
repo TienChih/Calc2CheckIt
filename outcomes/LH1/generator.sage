@@ -2,7 +2,7 @@ class Generator(BaseGenerator):
     def data(self):
         from sage.symbolic.integration.integral import definite_integral
         from sage.symbolic.integration.integral import indefinite_integral
-        var("u")
+        var("u power")
         
         
         
@@ -19,7 +19,7 @@ class Generator(BaseGenerator):
         
         if scenario1 == 0:
             
-            C = [-5,-4,-3,-2,2,3,4,5]
+            C = [2,3,4,5, 6, 7]
             shuffle(C)
 
             c1 = C[0]
@@ -32,7 +32,7 @@ class Generator(BaseGenerator):
 
             a = randrange(1,6)
 
-            f(x) = c1*x/(x-a)-c2/ln(x/a)  
+            f(x) = (c1*x/(x-a)-c2/ln(x/a))*choice([-1,1])  
 
 
             directionchoice = randrange(0,2)
@@ -142,11 +142,23 @@ class Generator(BaseGenerator):
             c1 = Rational(randrange(1,6)^choice([-1,1]))
             c2 = Rational(randrange(1,6)^choice([-1,1]))
 
+            zerochoice(power) = choice([sin(x^(power)), tan(x^(power)), arcsin(x^(power)), arctan(x^(power))])
+            zerofuncs = [x^(power), x^(power), zerochoice(power)]
+            shuffle(zerofuncs)
+            zerobase(power) = zerofuncs[0]
+            zeroexp(power) = zerofuncs[1]
+
+            infinitychoice(power) = choice([1/sin(x^(-power)), 1/tan(x^(-power)), 1/arcsin(x^(-power)), 1/arctan(x^(-power))])
+            infinityfuncs = [x^(power), x^(power), infinitychoice(power)]
+            shuffle(infinityfuncs)
+            infinitybase(power) = infinityfuncs[0]
+            infinityexp(power) = infinityfuncs[1]
+
             if limittype == 0:
                 a=0
                 direction = "plus"
                 directionsymbol = r"+"
-                f(x) = (1 + c1*x^p1  )^(c2/(x^p2) )
+                f(x) = (1 + c1*zerobase(p1)  )^(c2/(zeroexp(p2) ))
 
                 thelimit = limit(f(x), x=a, dir=direction)    
 
@@ -154,9 +166,9 @@ class Generator(BaseGenerator):
                 a= r"\infty" 
                 direction = " "
                 directionsymbol = r" "
-                f(x) = (1 + c1/x^p1  )^(c2*(x^p2) )
+                f(x) = (1 + c1/infinitybase(p1)  )^(c2*(infinityexp(p2)) )
                     
-                thelimit = limit(f(x), x=oo, )    
+                thelimit = limit(f(x), x=oo, algorithm="sympy")    
              
 
             tasks+=[{

@@ -73,7 +73,7 @@ class Generator(BaseGenerator):
         }
         ]
 
-        
+        '''
 
         p = Rational(1/randrange(2,4))
         f(x) = randrange(1,6)/(x^p * e^(randrange(1,6)*x^p))    
@@ -95,6 +95,8 @@ class Generator(BaseGenerator):
             "Int2": Int2,
         }
         ]
+
+        '''
 
         shuffle(tasks)   
         
