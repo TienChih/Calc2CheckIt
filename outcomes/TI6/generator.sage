@@ -42,7 +42,7 @@ class Generator(BaseGenerator):
             f(x) = randrange(2,6)*(r1(x,a1,b1,p1)^s1)*x^(s2*p2)
 
             
-            F(x) = integral(f(x),x)
+            F(x) = integral(f(x),x, algorithm='giac')
                         
             
 
@@ -108,7 +108,7 @@ class Generator(BaseGenerator):
             
         g2(x) = choice([g(x),g(x), randrange(1,6)* arctan(randrange(1,6)*x^(1/randrange(2,5))),randrange(1,6)* arctan(randrange(1,6)*x^(-1/randrange(1,5)))  ])    
 
-        G(x) = integral(g2(x),x)    
+        G(x) = integral(g2(x),x, algorithm='giac')    
                     
         tasks +=[{
                 "fx": g2(x),

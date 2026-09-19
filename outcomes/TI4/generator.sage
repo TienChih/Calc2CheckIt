@@ -60,7 +60,7 @@ class Generator(BaseGenerator):
                 ft1(theta) = R1*dx1/sub1(theta)^P    
             
             Ft1(theta) = integral(ft1(theta), theta)    
-            F1(x) = integral(f1(x),x)
+            F1(x) = integral(f1(x),x, algorithm='giac')
                         
             bounds = [pi/6, pi/4, pi/3]
             shuffle(bounds)

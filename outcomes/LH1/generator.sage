@@ -14,7 +14,7 @@ class Generator(BaseGenerator):
         LIMS = [True,  False]
         shuffle(LIMS)
 
-        scenario1 = randrange(0,3)
+        scenario1 = randrange(0,4)
 
         
         if scenario1 == 0:
@@ -232,7 +232,71 @@ class Generator(BaseGenerator):
             }
             ]    
         
-        silly = randrange(0,2)
+        if scenario1 == 3:
+            
+            Angles = [pi/6, pi/4, pi/3, ]
+            shuffle(Angles)
+
+            angle1 = Angles[0]
+
+            actuallimit = LIMS[0]
+            if actuallimit:
+                angle2 = angle1
+            else:
+                angle2 = Angles[1]    
+
+            c1 = randrange(1,6)*choice([-1,1])
+            c2 = randrange(1,6)*choice([-1,1])
+            
+            
+            Trig = [sin(x), cos(x), tan(x)]
+            Inverses = [arcsin(x), arccos(x), arctan(x), ]
+            
+            k = randrange(0,3)
+
+            g1(x) = Trig[k]
+            g1i(x) = Inverses[k]
+            G1i(x) = c1*g1i(x*c2)
+
+            A2 = g1(angle2)/c2
+            A1 = g1(angle1)/c2
+            K = c1*angle2
+
+            h(x) = randrange(1,6)* choice([ln(x/A1), choice([-1,1])*(x - A1) ])
+
+            f(x) = ((G1i(x) - K)/h(x))^choice([-1,1])
+
+            a = g1(angle1)/c2
+
+
+
+            limittype =  randrange(0,2)
+
+
+            if limittype == 0:
+                direction = "plus"
+                directionsymbol = r"+"
+                
+
+                  
+
+            if limittype == 1:
+                direction = "minus"
+                directionsymbol = r"-"
+                    
+             
+            thelimit = limit(f(x), x=a, dir=direction)      
+            tasks+=[{
+                "fx":f(x),
+                "a": a,
+                "thelimit": thelimit,
+                "direction": direction,
+                "directionsymbol": directionsymbol,
+                
+            }
+            ]          
+
+        silly = randrange(0,3)
 
         if silly == 0:
             
@@ -340,6 +404,70 @@ class Generator(BaseGenerator):
                 
             }
             ]    
+
+        if silly == 2:
+            
+            Angles = [pi/6, pi/4, pi/3, ]
+            shuffle(Angles)
+
+            angle1 = Angles[0]
+
+            actuallimit = LIMS[0]
+            if actuallimit:
+                angle2 = angle1
+            else:
+                angle2 = Angles[1]    
+
+            c1 = randrange(1,6)*choice([-1,1])
+            c2 = randrange(1,6)*choice([-1,1])
+            
+            
+            Trig = [sin(x), cos(x), tan(x)]
+            Inverses = [arcsin(x), arccos(x), arctan(x), ]
+            
+            k = randrange(0,3)
+
+            g1(x) = Trig[k]
+            g1i(x) = Inverses[k]
+            G1i(x) = c1*g1i(x*c2)
+
+            A2 = g1(angle2)/c2
+            A1 = g1(angle1)/c2
+            K = c1*angle2
+
+            h(x) = randrange(1,6)* choice([ln(x/A1), choice([-1,1])*(x - A1) ])
+
+            f(x) = ((G1i(x) - K)/h(x))^choice([-1,1])
+
+            a = g1(Angles[2])/c2
+
+
+
+            limittype =  randrange(0,2)
+
+
+            if limittype == 0:
+                direction = "plus"
+                directionsymbol = r"+"
+                
+
+                  
+
+            if limittype == 1:
+                direction = "minus"
+                directionsymbol = r"-"
+                    
+             
+            thelimit = limit(f(x), x=a, dir=direction)      
+            tasks+=[{
+                "fx":f(x),
+                "a": g1(Angles[2])/c2,
+                "thelimit": thelimit,
+                "direction": direction,
+                "directionsymbol": directionsymbol,
+                
+            }
+            ]              
 
 
         shuffle(tasks)
