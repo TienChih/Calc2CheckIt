@@ -47,7 +47,7 @@ class Generator(BaseGenerator):
             scenario = randrange(0,3)
 
             if scenario == 0:
-                P = choice([0,2])
+                P = choice([0])
                 f1(x) = x^P*r1(x,a1,b1)
                 ft1(theta) = sub1(theta)^P*R1*dx1
             if scenario == 1:
