@@ -38,8 +38,8 @@ class Generator(BaseGenerator):
         ]
 
 
-        p3 = randrange(1,4)*2
-        p4 = 2
+        p3 = randrange(0,3)*2
+        p4 = 4-p3
 
         trigs2 = [sin(x), cos(x)]
         shuffle(trigs2)

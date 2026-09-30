@@ -73,16 +73,16 @@ class Generator(BaseGenerator):
         }
         ]
 
-        '''
-
+        
         p = Rational(1/randrange(2,4))
-        f(x) = randrange(1,6)/(x^p * e^(randrange(1,6)*x^p))    
-        F(x) = integral(f(x),x)
+        f(x) = randrange(1,6)/(x^p * e^(randrange(1,6)*x^p))  
+
+        F(x) = integral(f(x),x)    
         right = "\infty"
         left = 0
         Int = integral(f(x), x, 0, oo,).expand()  
         Int1 = integral(f(x), x, 0, 1,).expand()   
-        Int2 = -1*F(1)#integral(f(x), x, 1, oo,).expand()   
+        Int2 = integral(f(x), x, 1, oo,).expand()   
         improper = "Both"
         tasks +=[{
             improper: True,
@@ -96,7 +96,7 @@ class Generator(BaseGenerator):
         }
         ]
 
-        '''
+        
 
         shuffle(tasks)   
         
