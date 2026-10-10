@@ -74,8 +74,16 @@ class Generator(BaseGenerator):
         ]
 
         
-        p = Rational(1/randrange(2,4))
-        f(x) = randrange(1,6)/(x^p * e^(randrange(1,6)*x^p))  
+        scenario2 = randrange(0,2)
+
+        if scenario2 == 0:
+            p = Rational(1/randrange(2,4))
+            f(x) = randrange(1,6)/(x^p * e^(randrange(1,6)*x^p))  
+        
+        if scenario2 == 1:
+            c1 = randrange(1,6)
+            c2 = randrange(1,6) 
+            f(x) = randrange(1,6)/(c1^2*x^(3/2) +c2^2*x^(1/2)  )   
 
         F(x) = integral(f(x),x)    
         right = "\infty"

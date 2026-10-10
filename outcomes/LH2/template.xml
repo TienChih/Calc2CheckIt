@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+        
+        
+        <content>
+            <p>
+                Suppose that <m>\renewcommand{\log}{\ln} \displaystyle \lim_{x\to {{a}}^{ {{directionsymbol}} }} \frac{ {{fx}} }{ x^p } </m> is well defined,
+                not zero, nor infinite.  Find <m>p</m> and this limit.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>\renewcommand{\log}{\ln}\displaystyle \lim_{x\to {{a}}^{ {{directionsymbol}} }} \frac{ {{fx}} }{  {{gx}}  } = {{thelimit}} </m>.
+            </p>
+        </outtro>
+        
+    
+    
+        
+    
+    
+    
+    
+    
+   
+    
+   
+</knowl>

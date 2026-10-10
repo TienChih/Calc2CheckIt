@@ -13,6 +13,14 @@
             </description>
         </outcome>
         <outcome>
+            <title>Rates of Vanishing</title>
+            <slug>LH2</slug>
+            <path>outcomes/LH2</path>
+            <description>
+                Determine the rate at which a function vanishes.
+            </description>
+        </outcome>
+        <outcome>
             <title>Integration Review</title>
             <slug>TI1</slug>
             <path>outcomes/TI1</path>
