@@ -85,7 +85,7 @@ class Generator(BaseGenerator):
 
         
         absa(n) = a(n)
-        a(n) = (absa(n)*choice([-1,1])^n )^n    
+        a(n) = (absa(n)*choice([-1,1]) )  
 
         Lim = limit(absa(n), n, oo)
 
