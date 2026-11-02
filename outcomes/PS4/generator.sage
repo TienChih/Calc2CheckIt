@@ -45,7 +45,7 @@ class Generator(BaseGenerator):
             for i in range(4):
                 k[i+1] = k[i]+1
             for i in range(5):
-                num[i] = C* (Input^(P*k[i]+P+outside )/(2*k[i]+1))*(-1)^(k[i])    
+                num[i] = C* (Input^(2*P*k[i]+P+outside )/(2*k[i]+1))*(-1)^(k[i])    
                 
                 
         if selection == 2:
