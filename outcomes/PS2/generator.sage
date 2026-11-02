@@ -31,7 +31,8 @@ class Generator(BaseGenerator):
                 A(x, n) = (n+1)*x^(P*n+outside)*(coeff)^n
                 if alt == -1:
                     A(x, n) = A(x,n)*(-1)^n
-                k1 = 1    
+                k1 = 1 
+                k0 = 1
         if selection == 1:
             f(x) = ln(1+x)
             a(x, n) = (-1)^(n-1)*x^n/n
@@ -46,10 +47,20 @@ class Generator(BaseGenerator):
                 A(x, n) = -1*A(x,n)
             k0 = 0    
             k1 = 0 
+
+        if selection == 3:
+            f(x) = 1/(1-x)
+            a(x, n) = x^n
+            A(x, n) = x^(P*n+outside)*coeff^n
+            if alt == -1:
+                A(x, n) = -1*A(x,n)
+            k0 = 0    
+            k1 = 0         
+
         F(x) = (x^outside)*f(alt*coeff*x^P)
-        if outside == -1 and selection !=2:
-            k0 = 0
-            A(x,n) = A(x,n+1)
+        #if outside == -1 and selection !=2:
+        #    k0 = 0
+        #    A(x,n) = A(x,n+1)
 
         tasks+=[{
             "fx": f(x),
